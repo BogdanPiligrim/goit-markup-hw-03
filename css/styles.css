@@ -3,16 +3,28 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
+img {
+    display: block;
+}
 .meny {
     display: inline-flex;
     height: 24px;
     align-items: center;
     flex-shrink: 0;
+    border-bottom: 1px solid #e7e9fc;
+}
+.meny-conteiner {
+    display: flex;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .web-studio-nav {
     text-decoration: none;
     width: 1440px;
     height: 72px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -26,6 +38,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    margin-right: 76px;
 }
 .logo-studio {
     color:#2E2F42;
@@ -42,7 +55,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    
+    padding: 24px 0;
 }
   
 .navigation:hover {
@@ -73,19 +86,22 @@ body {
     gap: 8px;
 }
 .ul-content {
-    display: inline-block;
+    display: flex;
+    gap: 24px; 
 }
 .ul-ad {
     list-style: none;
     width: 1440px;
     height: 72px;
     flex-shrink: 0;
+    display: flex;
+    gap: 40px;
 }
 .ul-nav {
     list-style: none;
-    display: inline-flex;
     align-items: flex-start;
     gap: 40px;
+    display: flex;
 }
 .add-class {
     font-style: normal;
@@ -93,10 +109,12 @@ body {
 }
 .section-one {
     background-color: #2e2f42;
-    width: 1440px;
-    height: 600px;
     flex-shrink: 0;
+    padding: 188px 0;
     
+}
+.one-conteiner {
+    max-width: 496px; 
 }
 .effective {
     font-size: 56px;
@@ -122,12 +140,15 @@ body {
     letter-spacing: 0.04em;
     color: #ffffff; 
     cursor: pointer;
-    display: block;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
     padding: 16px 32px;
-    margin: 0 auto;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none; 
+    border-radius: 4px;
 }
 button:hover {
     background-color: #404BBF;
@@ -135,8 +156,12 @@ button:hover {
 button:focus {
     background-color: #404BBF;
 }
+.li-content {
+    width: calc((100% - 72px) / 4);
 
+}
 .li-content-h {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -146,6 +171,13 @@ button:focus {
 .content-paragraf {
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.section-two {
+    padding: 120px 0; 
+}
+.conteiner-two
+{
+
 }
 .content-two {
     font-size: 36px;
@@ -167,6 +199,7 @@ button:focus {
     height: 732px;
     flex-shrink: 0;
 }
+
 .content-three {
     font-size: 36px;
     line-height: 1.11;
@@ -174,8 +207,17 @@ button:focus {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42;
+    margin-bottom: 72px;
+}
+.ul-team {
+    display: flex;
+    gap: 24px;
+}
+.content-team {
+    padding: 32px 0; 
 }
 .li-content-three {
+    width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
     display: inline-block;
     padding-bottom: 32px;
@@ -194,19 +236,30 @@ button:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .thre-paragraf {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center; 
 }
 .portfolio {
+    padding-top: 120px; 
+    padding-bottom: 120px
+}
+.conteiner-portfolio {
+
+}
+.portfolio-h {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 .portfolio-items {
     font-weight: 500;
@@ -226,6 +279,9 @@ button:focus {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+
 }
 .li-portfolio {
     display: flex;
@@ -238,9 +294,21 @@ button:focus {
     flex-shrink: 0;
     border: 1px solid var(--CORNFLOWER, #E7E9FC);
     background: var(--WHITE, #FFF);
+    width: calc((100% - 48px) / 3); 
+}
+.port {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+
 }
 .fot-content {
     background-color: #2e2f42;
+    padding: 100px 0; 
+}
+.foot-conteiner {
+
 }
 .fot-logo {
     font-family: "Raleway", sans-serif;
@@ -250,6 +318,9 @@ button:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block; 
+    margin-bottom: 16px;
+
 }
 .fot-span {
     color: #f4f4fd;
@@ -258,4 +329,5 @@ button:focus {
     line-height: 1.5;
     color:#F4F4FD;
     letter-spacing: 0.02em; 
+    max-width: 264px;
 }
