@@ -138,6 +138,8 @@ button:focus {
 .content-ul {
     display: flex;
     gap: 24px;
+    padding: 0;
+    margin: 0;
 }
 .li-content {
     width: calc((100% - 72px) / 4);
