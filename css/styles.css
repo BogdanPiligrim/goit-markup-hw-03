@@ -220,6 +220,8 @@ button:focus {
 }
 .li-content-three {
     background-color: #FFFFFF;
+    width: calc((100% - 48px) / 3); 
+    border-radius: 0px 0px 4px 4px;
 
 }
 .content-h-three {
